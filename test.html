@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<script>
+$(document).ready(function () {
+    setTimeout(function(){
+        $('.popup').fadeIn(500);
+    }, 5000);
+  
+  $('#close').on('click', function() {
+    $('.popup').remove();
+  });
+});
+</script>
+<div class="popup animated fadeIn">
+  <h2 class="center">Tule mukaan tukemaan lasten ja nuorten liikkumista. Lahjoita pieni summa rahaa!</h2>
+
+  <div class="content center">
+    Discover the 5 biggest threats facing SME law firms today.
+  </div>
+  <a href="https://i2.fi" target="_blank">
+    <div class="btn btn-boarder btn-feature btn-lg center"><p class="buttontext">Lahjoita</div>
+   </a>
+  <i id="close" class="fa fa-close"><div class="sr-only">Close</div></i>
+  
+  <style>
+  $popup-padding: 1em;
+
+.popup {
+  margin-top: 50px;
+  top: 30%; left: 0.5%;
+  padding: 20px;
+  background: #fff;
+  border-top: 5px solid #F69139;
+  width: 20%;
+  position: relative;
+  animation-delay: 0s;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.center {
+ text-align: center;
+ }
+
+.popup i {
+  position: absolute;
+  top: $popup-padding; right: $popup-padding;
+  cursor: pointer;
+  color: #1E1E1E;
+}
+
+@media screen and (max-width: 768px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+    margin: 70px auto;
+  }
+}
+</style>
+</div>
+</html>
